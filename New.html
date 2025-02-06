@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hillridge International School</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+        }
+        img {
+            max-width: 200px;
+            margin-bottom: 15px;
+        }
+        .highlight {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffeb3b;
+            animation: blink 1s infinite alternate;
+        }
+        @keyframes blink {
+            from { opacity: 1; }
+            to { opacity: 0.5; }
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 20px 0;
+            background: #ff5722;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #e64a19;
+        }
+        .qr-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #ffccbc;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert("Welcome to Our School! Admissions for 2025-26 are now open.");
+        }
+        window.onload = function() {
+            setTimeout(showAlert, 2000);
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="Logo.jpg" alt="School Logo">
+        <h2>An IB PYP Candidate School</h2>
+        <p class="highlight">Admission for 2025 - 26 Open</p>
+        <p class="highlight">Limited Seats Available</p>
+        <p>📍 Address: 4/3, Marappan Thottam, Pattanam Road, Rasipuram - 637 408</p>
+        <p>📞 Contact: +91 7338869255</p>
+        <div class="qr-container">
+            <div>
+                <img src="Admission.png" alt="Admission QR Code" height="400" width="400">
+                <p>Admission Inquiry (via WhatsApp)</p>
+            </div>
+            <div>
+                <img src="Admission.png" alt="Career QR Code" height="400" width="400">
+                <p>Career with Us (via WhatsApp)</p>
+            </div>
+        </div>
+        <p class="footer">⚠️ Detailed webpage under construction. Stay tuned!</p>
+    </div>
+</body>
+</html>
